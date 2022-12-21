@@ -1,8 +1,5 @@
+import { getRandomInt } from "../getRandomInt";
 import type { DieFace, RollCommand, RollResult } from "./types";
-
-export function getRandomInt(max: number): number {
-  return Math.floor(Math.random() * max);
-}
 
 export function roll(commands: RollCommand[]): RollResult[] {
   return commands.map((command) => {

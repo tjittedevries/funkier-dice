@@ -1,5 +1,5 @@
-import type { Set, Die } from "@/funky-dice/types";
-import { getRandomInt } from "../roller";
+import type { Set, Die } from "@/utils/funky-dice";
+import { getRandomInt } from "@/utils/getRandomInt";
 
 const fateDie = {
   name: "Face d6",

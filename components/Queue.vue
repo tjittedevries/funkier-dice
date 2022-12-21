@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { roll } from "@/funky-dice/roller";
+import { roll } from "@/utils/funky-dice";
 import { useHistoryStore } from "@/store/history";
 import { useQueueStore } from "@/store/queue";
 

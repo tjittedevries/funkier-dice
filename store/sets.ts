@@ -1,11 +1,10 @@
 import { ref } from "vue";
-import { defineStore } from "pinia";
-import type { Set } from "@/funky-dice/types";
+import type { Set } from "@/utils/funky-dice";
 
-import polySet from "@/funky-dice/sets/poly";
-import fateSet from "@/funky-dice/sets/fate";
-import starWarsSet from "@/funky-dice/sets/star-wars";
-import theOneRingSet from "@/funky-dice/sets/the-one-ring";
+import { polySet } from "@/utils/sets";
+import { fateSet } from "@/utils/sets";
+import { starWarsSet } from "@/utils/sets";
+import { theOneRingSet } from "@/utils/sets";
 
 export const useSetsStore = defineStore("sets", () => {
   const sets = ref<Set[]>([polySet, fateSet, starWarsSet, theOneRingSet]);
