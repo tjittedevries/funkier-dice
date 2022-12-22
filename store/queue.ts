@@ -1,6 +1,5 @@
 import { ref } from "vue";
-import { defineStore } from "pinia";
-import { Die, RollCommand } from "@/funky-dice/types";
+import { Die, RollCommand } from "@/utils/funky-dice";
 
 export const useQueueStore = defineStore("diceQueue", () => {
   const queue = ref<RollCommand[]>([]);

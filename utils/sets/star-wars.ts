@@ -1,4 +1,4 @@
-import type { Die, Set } from "@/funky-dice/types";
+import type { Die, Set } from "@/utils/funky-dice";
 
 const boostDie: Die = {
   name: "Boost die (d6)",

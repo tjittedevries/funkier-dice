@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import Sets from "@/components/Sets.vue";
-import Queue from "@/components/Queue.vue";
-import History from "@/components/History.vue";
-
 import { ref } from "vue";
 
 const theme = ref("dark");
@@ -38,9 +34,7 @@ function onClick() {
 
     <v-main>
       <v-container>
-        <Sets />
-        <Queue />
-        <History />
+        <slot />
       </v-container>
     </v-main>
   </v-app>

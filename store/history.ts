@@ -1,6 +1,5 @@
 import { ref } from "vue";
-import { defineStore } from "pinia";
-import { RollHistory, RollResult } from "@/funky-dice/types";
+import { RollHistory, RollResult } from "@/utils/funky-dice";
 
 export const useHistoryStore = defineStore("diceHistory", () => {
   const history = ref<RollHistory[]>([]);

@@ -1,4 +1,5 @@
-import type { Set, Die } from "@/funky-dice/types";
+import type { Set, Die } from "@/utils/funky-dice";
+import { getRandomInt } from "@/utils/getRandomInt";
 
 const fateDie = {
   name: "Face d6",
@@ -35,6 +36,13 @@ const fateDie = {
     },
   ],
 };
+
+export function roller(amount = 4) {
+  const index = getRandomInt(amount);
+  return fateDie.sides[index];
+}
+
+console.log("fate roller", roller());
 
 const set: Set = {
   name: "Fate",
